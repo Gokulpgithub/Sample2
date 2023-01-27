@@ -1,0 +1,61 @@
+package Switch_Statment;
+import java.util.*;
+public class Example2 {
+	void sum(int e, int f)
+	{ int a2=e+f;
+	System.out.println("The Sum Of The Result is:"+a2);
+	}
+	void diff(int e, int f)
+	{
+		int a3=f-e;
+		System.out.println("The Diff Of the Numbers is :"+a3);
+	}
+	void Div(int e,int f)
+	{int a4=f/e;
+	System.out.println("The quotient is:"+a4);
+	}
+void Mul(int e,int f)
+{int a5=e*f;
+System.out.println("The Product of the numbers is:"+a5);
+}
+void great(int e, int f)
+{if (e>f)
+	{System.out.println(e+" is greater than "+f);
+	}
+else
+{System.out.println(e+" is less than "+f);
+}
+	}
+	public static void main(String[] args) {
+		Scanner a1=new Scanner(System.in);
+		System.out.println("Enter the First Number:");
+		int a=a1.nextInt();
+		System.out.println("Enter the Second Number:");
+		int b=a1.nextInt();
+		System.out.println("1.Add");
+		System.out.println("2.Difference");
+		System.out.println("3.Div");
+		System.out.println("4.Multiply");
+		int choice=a1.nextInt();
+		Example2 s=new Example2();
+		switch(choice) {
+		case 1:
+			s.sum(a,b);
+			break;
+		case 2:
+			s.diff(a,b);
+			break;
+		case 3:
+			s.Div(a,b);
+			break;
+		case 4:
+			s.Mul(a,b);
+			break;
+		default :
+		System.out.println("Invalid Option");
+		break;
+		}
+	s.great(a,b);	
+	}
+
+}
